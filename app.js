@@ -49,6 +49,8 @@ const gameboard = function(){
          restart.style.display = "unset"
       }   
 }
+
+   
       
       if (xWon){
          winner.textContent = `${player1.name} Won!`
@@ -95,7 +97,7 @@ const gameboard = function(){
     }
 
     function draw(){
-      if (!gameArray.includes("")){
+      if (!gameArray.includes("") && xWon === false && oWon === false){
          winner.textContent = "Its a Draw!"
          restart.style.display = "unset"
       }
